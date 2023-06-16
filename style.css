@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin-block-start: auto;
+    margin: auto;
+}
+
+html {
+    font-family: "Montserrat";
+}
+
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+    animation: fade 2.5s forwards;
+    overflow: hidden;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+        height: 100vh;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+
+}
+
+.loader>span {
+    background: black;
+    border-radius: 50%;
+    margin: 5rem 0.5rem;
+    animation: bouncingLoader 2s;
+}
+
+.loader>span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader>span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bouncingLoader {
+    from {
+        width: 0.1rem;
+        height: 0.1rem;
+        opacity: 1;
+        transform: translate3d(0);
+    }
+
+    to {
+        width: 1rem;
+        height: 1rem;
+        opacity: 0%;
+        transform: translate3d(0, -1rem, 0);
+    }
+}
+
+.titre {
+    background-image: url(code-g2d218bffb_1920.jpg);
+    height: 603px;
+    text-align: center;
+}
+
+
+nav {
+    overflow: hidden;
+    background-color: saddlebrown;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: x-large;
+}
+
+nav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.titre2 {
+    display: inline-block;
+    border-radius: 1em;
+    text-align: center;
+    height: 603px;
+    background-color: black;
+    width: 1900px;
+    filter: opacity(0.85);
+}
+
+.titre3 {
+    background-color: saddlebrown;
+    width: 1000px;
+    height: 81px;
+    margin-top: 207px;
+    border: solid aliceblue;
+}
+
+.competences1 {
+    border-radius: 1em;
+    background-color: saddlebrown;
+    padding: 20px;
+}
+
+.Outils {
+    border-radius: 1em;
+    padding: 10px;
+    background-color: saddlebrown;
+}
+
+.Languages {
+    border-radius: 1em;
+    padding: 10px;
+    background-color: saddlebrown;
+}
+
+.portfolio1 {
+    border-radius: 1em;
+    background-color: gray;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact1 {
+    border-radius: 1em;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: saddlebrown;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+.presentation {
+    display: flex;
+    flex-flow: wrap;
+    background-color: saddlebrown;
+}
+
+.competences {
+    height: 450px;
+    background-color: grey;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+}
+
+
+li {
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.portfolio {
+    padding: 50px;
+    background-color: saddlebrown;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.zoom {
+    transition: transform .1s;
+}
+
+.zoom img {
+    height: 300px;
+    margin: 50px;
+}
+
+.zoom img:hover {
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+}
+
+.contact {
+    height: 200px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: white;
+}
+
+.moi {
+    border-radius: 1em;
+    height: 300px;
+    margin: 50px;
+    border: solid aliceblue;
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+    display: flex;
+
+}
